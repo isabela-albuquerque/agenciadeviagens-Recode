@@ -1,0 +1,109 @@
+-- Geração de Modelo físico
+-- Sql ANSI 2003 - brModelo.
+
+
+
+CREATE TABLE Cliente (
+id_cliente VARCHAR(10) PRIMARY KEY,
+nome VARCHAR(100),
+cpf VARCHAR(11),
+endereco VARCHAR(200),
+email VARCHAR(100),
+telefone VARCHAR(15),
+data_nascimento DATETIME
+)
+
+CREATE TABLE Contato (
+id_contato VARCHAR(10) PRIMARY KEY,
+nome VARCHAR(100),
+email VARCHAR(100),
+mensagem VARCHAR(300),
+data_envio DATETIME
+)
+
+CREATE TABLE Reserva (
+id_reserva VARCHAR(10) PRIMARY KEY,
+id_viagem VARCHAR(10),
+id_cliente VARCHAR(10),
+data_reserva DATETIME,
+valor_total DECIMAL(10,2),
+numero_pessoas INT,
+status ENUM
+)
+
+CREATE TABLE Pagamento (
+id_pagamento VARCHAR(10) PRIMARY KEY,
+id_reserva VARCHAR(10),
+valor_pagamento DECIMAL(10,2),
+data_pagamento DATETIME,
+metodo_pagamento ENUM
+)
+
+CREATE TABLE Promoção (
+id_promocao VARCHAR(10) PRIMARY KEY,
+id_destino VARCHAR(10),
+nome VARCHAR(100),
+desconto DECIMAL(5,2),
+descricao TEXT,
+data_inicio DATETIME,
+data_fim DATETIME
+)
+
+CREATE TABLE Destino (
+id_destino VARCHAR(10) PRIMARY KEY,
+nome VARCHAR(100),
+descricao TEXT,
+localizacao VARCHAR(100),
+pais VARCHAR(100),
+estado VARCHAR(100)
+)
+
+CREATE TABLE Viagem (
+id_viagem VARCHAR(10) PRIMARY KEY,
+id_destino VARCHAR(10),
+nome VARCHAR(100),
+descricao TEXT,
+data_inicio DATETIME,
+data_fim DATETIME,
+preco DECIMAL(10,2),
+capacidade_pessoas INT,
+itinerario VARCHAR(200)
+)
+
+CREATE TABLE Passagem (
+id_passagem VARCHAR(10) PRIMARY KEY,
+id_viagem VARCHAR(10),
+id_cliente VARCHAR(10),
+classe VARCHAR(50),
+data_embarque DATETIME,
+numero_assento INT,
+companhia VARCHAR(100),
+preco DECIMAL(10,2)
+)
+
+CREATE TABLE Compra (
+id_passagem VARCHAR(10),
+id_cliente VARCHAR(10),
+FOREIGN KEY(id_passagem) REFERENCES Passagem (id_passagem),
+FOREIGN KEY(id_cliente) REFERENCES Cliente (id_cliente)
+)
+
+CREATE TABLE Envia (
+id_contato VARCHAR(10),
+id_cliente VARCHAR(10),
+FOREIGN KEY(id_contato) REFERENCES Contato (id_contato),
+FOREIGN KEY(id_cliente) REFERENCES Cliente (id_cliente)
+)
+
+CREATE TABLE Efetua (
+id_pagamento VARCHAR(10),
+id_reserva VARCHAR(10),
+FOREIGN KEY(id_pagamento) REFERENCES Pagamento (id_pagamento),
+FOREIGN KEY(id_reserva) REFERENCES Reserva (id_reserva)
+)
+
+CREATE TABLE Oferece (
+id_promocao VARCHAR(10),
+id_destino VARCHAR(10),
+FOREIGN KEY(id_promocao) REFERENCES Promoção (id_promocao),
+FOREIGN KEY(id_destino) REFERENCES Destino (id_destino)
