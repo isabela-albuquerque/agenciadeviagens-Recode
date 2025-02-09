@@ -1,0 +1,68 @@
+.custom-navbar {
+    background-color: #007bff !important; /* Azul Bootstrap */
+  }
+
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif; /* Fonte personalizada */
+    font-size: 30px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #3498db; /* Cor personalizada */
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+  }
+  
+  
+  .carousel-caption h5, .carousel-caption p {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+    
+  .card {
+    overflow: visible;
+  }
+
+  .btn-primary:hover {
+    background-color: #004085 !important;
+    border-color: #003766 !important;
+  
+  }
+
+  #depoimentosCarousel {
+    background-color: #f8f9fa !important;
+  }
+
+  #depoimentosCarousel {
+    min-height: 300px;
+  }
+
+  #depoimentosCarousel {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+  }
+  
+  #depoimentosCarousel blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  #depoimentosCarousel footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  

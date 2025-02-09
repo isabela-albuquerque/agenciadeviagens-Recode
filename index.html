@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Destino Certo Viagens</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/estilo.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilo.css">
+
+
+
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary  position-relative">
+    <div class="container">
+      
+  <!-- Botão Hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- cabeçalho -->
+      <header class="bg-primary text-white p-1">
+        <div class="container">
+          <h1 class="display-8">Destino Certo Viagens</h1>
+          <nav>
+          <!-- Menu -->
+            <ul class="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="bi bi-airplane-engines me-2"></i>Passagens</a>
+            <a href="#" class="text-white  ms-2"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="bi bi-fire me-2"></i>Promoções</a>
+            <a href="#" class="text-white  ms-2"></a>
+          </li>
+        </ul>
+       
+</div>
+    </div>
+  </header>
+    <!-- Ícones sociais na parte inferior direita -->
+    <div class="position-absolute bottom-0 end-0 p-2 d-flex">
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+</nav>
+  </nav>
+  <div class="container-fluid p-12 my-12"></div>
+  <!-- Seção Home -->
+  <section id="home" class="container py-2">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Bem-vindo à nossa agência de viagens!</h2>
+        <p>Oferecemos as melhores opções de destinos para você aproveitar suas férias ao máximo!</p>
+        <a href="#destinos" class="btn btn-primary">Descubra Nossos Destinos</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/id/74/1200/400" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Descubra o Seu Próximo Destino</h5>
+          <p>Paisagens deslumbrantes e experiências inesquecíveis esperam por você!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/218/1200/400" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>A viagem dos seus sonhos começa aqui!</h5>
+          <p>Escolha o seu próximo roteiro!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/116/1200/400" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Viaje com Tranquilidade</h5>
+          <p>Sua viagem perfeita. Embarque nessa jornada!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="container my-5 text-center">
+    <h2>Sobre a Destino Certo Viagens</h2>
+    <p>Somos especialistas em tornar seus sonhos realidade! Com anos de experiência, oferecemos preços incríveis para
+      os melhores destinos do mundo.</p>
+  </section>
+
+  <!--Cards-->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Escolha seu destino</h2>
+    <div class="row g-4 justify-content-center">
+    <div class="col-md-3">
+      <div class="card h-100">
+        <img src="c:\Users\User\Pictures\Saved Pictures\agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.png"
+          class="card-img-top" alt="Viagem 1" />
+        <div class="card-body">
+          <h5 class="card-title">Rio de Janeiro</h5>
+          <p class="card-text">
+            Explore as praias deslumbrantes de Copacabana e Ipanema, admire o Cristo Redentor e curta o melhor do samba e da gastronomia carioca. Uma viagem cheia de energia e paisagens inesquecíveis!
+            Garanta aqui sua viagem!
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100">
+        <img src="c:\Users\User\Pictures\Saved Pictures\ze-paulo-gasparotto-h-UU2PnN5a0-unsplash.png"
+          class="card-img-top" alt="Viagem 2" />
+        <div class="card-body">
+          <h5 class="card-title">Fernando de Noronha</h5>
+          <p class="card-text">
+            Mergulhe em águas cristalinas, descubra praias paradisíacas e viva momentos únicos em um dos destinos mais preservados e exuberantes do Brasil!
+            Garanta aqui sua viagem!
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100">
+        <img src="c:\Users\User\Pictures\Saved Pictures\anthony-delanoix-QAwciFlS1g4-unsplash.png" class="card-img-top"
+          alt="Viagem 3" />
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">
+            Encante-se com a Cidade Luz! Visite a Torre Eiffel, os charmosos cafés e os museus icônicos, como o Louvre. Um destino romântico e sofisticado esperando por você.
+            Garanta aqui sua viagem!
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100">
+        <img src="c:\Users\User\Pictures\Saved Pictures\younho-choo-f6ImWlMhn18-unsplash.png" class="card-img-top"
+          alt="Viagem 4" />
+        <div class="card-body">
+          <h5 class="card-title">Disney</h5>
+          <p class="card-text">
+            Realize o sonho de infância com uma viagem mágica para a Disney! Aventure-se nos parques temáticos e crie memórias inesquecíveis com sua família.
+            Garanta aqui sua viagem!
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Viagens em destaque</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="c:\Users\User\Pictures\Saved Pictures\matt-artz-KTwhQQf1yus-unsplash.png" class="card-img-top"
+            alt="Viagem 5" />
+          <div class="card-body">
+            <h5 class="card-title">Grécia</h5>
+            <p class="card-text">
+              Explore as ilhas gregas de águas azul-turquesa, ruínas históricas e a gastronomia deliciosa. Um paraíso para quem busca cultura, lazer e paisagens de tirar o fôlego!
+              Garanta aqui sua viagem!
+            </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="c:\Users\User\Pictures\Saved Pictures\ricardo-gomez-angel-t2yh3mlISdQ-unsplash.png"
+            class="card-img-top" alt="Viagem 6" />
+          <div class="card-body">
+            <h5 class="card-title">Veneza</h5>
+            <p class="card-text">
+              Navegue pelos famosos canais, descubra a arquitetura renascentista e aproveite o charme inigualável desta cidade romântica e única no mundo.
+              Garanta aqui sua viagem!
+            </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="c:\Users\User\Pictures\Saved Pictures\cris-tagupa-zM9_h_5N7Xw-unsplash.png" class="card-img-top"
+            alt="Viagem 7" />
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">
+              A cidade que nunca dorme! Passeie pela Times Square, explore a Broadway, caminhe pelo Central Park e viva o melhor da cultura e do entretenimento mundial.
+              Garanta aqui sua viagem!
+            </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="c:\Users\User\Pictures\Saved Pictures\roman-logov-jomuw0-3F8A-unsplash.png" class="card-img-top"
+            alt="Viagem 8" />
+          <div class="card-body">
+            <h5 class="card-title">Dubai</h5>
+            <p class="card-text">
+              Experimente o luxo e a modernidade nos arranha-céus incríveis, shoppings gigantescos e safáris no deserto. Dubai é o destino perfeito para quem ama inovação e sofisticação.
+              Garanta aqui sua viagem!
+            </p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--clearfix-->
+  <div class="clearfix bg-primary rounded p-3 text-white">
+    <img src="c:\Users\User\Pictures\Saved Pictures\leo-rivas-R_BLOGXpsOg-unsplash.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Viagem dos sonhos">
+
+    <h2>Explore o Mundo com a Destino Certo Viagens</h2>
+    
+    <p>
+        Na <strong>Destino Certo Viagens</strong>, transformamos sonhos em realidade! Com anos de experiência no setor de turismo, oferecemos passagens para destinos incríveis ao redor do mundo. Seja uma viagem romântica, um passeio em família ou uma aventura solo, temos a opção ideal para você.
+    </p>
+
+    <p>
+        🌍 <strong>Destinos mais procurados:</strong> Paris, Roma, Maldivas, Nova York e muito mais!  
+       
+        ✈️ Passagens aéreas com condições exclusivas para nossos clientes.  
+    </p>
+
+    <p>
+        Reserve sua viagem para os destinos mais incríveis!  
+        Não perca essa oportunidade, entre em contato e garanta sua viagem dos sonhos!  
+    </p>
+
+    <a href="contato.html" class="btn btn-light">Venha Conferir</a>
+</div>
+
+  <!--form-->
+  <section class="container my-3">
+    <h2 class="text-center fs-5">Inscreva-se para receber ofertas exclusivas</h2>
+    <form class="mx-auto w-75 p-3" style="max-width: 350px;"> <!-- Adiciona largura reduzida e centraliza -->
+      <div class="mb-2">
+        <label for="nome" class="form-label small">Nome</label>
+        <input type="text" class="form-control form-control-sm" id="nome" placeholder="Seu nome">
+      </div>
+      <div class="mb-2">
+        <label for="email" class="form-label small">E-mail</label>
+        <input type="email" class="form-control form-control-sm" id="email" placeholder="seu@email.com">
+      </div>
+      <button type="button" class="btn btn-outline-primary w-100"><i class="bi bi-envelope"></i> Quero recebe-las</button>
+    </form>
+  </section>
+  <!--top button-->
+  <button onclick="topFunction()" id="btnTopo" class="btn btn-primary"
+    style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    ↑ Topo
+  </button>
+  <script>
+    let btnTopo = document.getElementById("btnTopo");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    };
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+}
+  </script>
+
+  <!--depoimentos-->
+
+<div id="depoimentosCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <blockquote class="blockquote">
+        <p>"A melhor experiência da minha vida! Recomendo muito a Destino Certo Viagens!"</p>
+        <footer class="blockquote-footer">João Silva</footer>
+      </blockquote>
+    </div>
+    <div class="carousel-item">
+      <blockquote class="blockquote">
+        <p>"Tudo organizado e perfeito, minha família adorou! Voltarei a viajar com vocês."</p>
+        <footer class="blockquote-footer">Maria Oliveira</footer>
+      </blockquote>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!--footer  -->
+  <footer class="bg-primary text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Destino Certo Viagens. Todos os direitos reservados.</p>
+      <hr class="bg-light">
+      <p>
+        Siga-nos:
+        <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white ms-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white ms-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white ms-2"><i class="bi bi-youtube"></i></a>
+      </p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
